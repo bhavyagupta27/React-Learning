@@ -1,7 +1,7 @@
-.Product{
-    border : 1px solid rgb(28, 3, 3);
-    border-radius : 24px;
-    margin-bottom : 15px;
-    padding: 0 5px 0 5px;
-    background-color: aqua;
+.Product {
+  border: 1px solid black;
+  border-radius: 15px;      
+  margin-bottom: 10px;      
+  padding: 15px;            
+  text-align: center;       
 }

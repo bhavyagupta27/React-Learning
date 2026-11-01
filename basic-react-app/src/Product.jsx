@@ -1,15 +1,14 @@
 import "./Product.css";
-
-function Product({ title, price, features }) {
-  let styles = { backgroundColor: "blue" };
-  const list = features.map((feature, index) => <li key={index}>{feature}</li>);
-  
+import Price from "./Price.jsx"
+function Product({ title }) {
+  let oldPrices = ["12,495", "11,900", "34,567", "67,849"];
+  let newPrices = ["495", "11", "34,999", "67,859"];
   return (
-    <div className="Product" style={styles}>
-      <h3>{title}</h3>
-      <h5>Price : {price}</h5>
-      <ul>{list}</ul>
-      {price > 30000 && <p>Discount of 5%</p>}
+    <div className="Product">
+      <h4>{title}</h4>
+      <p>Product</p>
+      <p>Description</p>
+      <Price/>
     </div>
   );
 }
